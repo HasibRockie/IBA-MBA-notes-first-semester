@@ -1,0 +1,170 @@
+\documentclass[12pt,a4paper]{book}
+
+% Fonts & Typography — Elegant and Professional
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts} % Sleek, modern font
+\usepackage{microtype}
+
+% Essential Packages
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{parskip}
+
+% Page Geometry — Slim, Clean Margins
+\geometry{
+  a4paper,
+  left=20mm,
+  right=20mm,
+  top=20mm,
+  bottom=20mm
+}
+
+% Header & Footer Styling
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \textit{\nouppercase{\leftmark}}}
+\fancyhead[R]{\small C501: Managerial Communication}
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+% Chapter Title Styling
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter.}{12pt}{}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}{1em}{}
+
+% Table of Contents Styling
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{}
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{2pt}
+\setlength{\cftaftertoctitleskip}{1em}
+
+% Hyperlink Styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={C501: Managerial Communication},
+    pdfpagemode=FullScreen,
+}
+
+% Custom Command for Notes 
+\newcommand{\notesection}[2]{
+  \section*{#1\\ \small \textit{#2}}
+  \phantomsection
+  \addcontentsline{toc}{section}{#1 - #2}
+}
+
+% Document Start
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{3.5cm}
+    \includegraphics[width=0.28\textwidth]{logo.png}\par\vspace{1.5cm}
+    {\scshape\LARGE University of Dhaka\par}
+    \vspace{0.5cm}
+    {\Large Institute of Business Administration (IBA)\par}
+    \vspace{1.5cm}
+    {\Huge\bfseries Master of Business Administration (MBA)\par}
+    \vspace{1cm}
+    {\Large C501: \textit{Managerial Communication}\par}
+    \vfill
+    {\large Last Updated: \today\par}
+\end{titlepage}
+
+% Author Details Section 
+\section*{Author Details}
+\phantomsection
+\addcontentsline{toc}{section}{Author Details}
+
+\begin{center}
+    \vspace{1em}
+    \begin{tabular}{lll}
+        \textbf{Name} & : & Md Hasibul Islam \\
+        \textbf{Student ID} & : & 201-67-011 \\
+        \textbf{Program} & : & Master of Business Administration (MBA) \\
+        \textbf{Institute} & : & Institute of Business Administration (IBA) \\
+        \textbf{University} & : & University of Dhaka \\
+        \textbf{Email} & : & \href{mailto:hasiee8004@gmail.com}{hasiee8004@gmail.com} \\
+        \textbf{LinkedIn} & : & \href{https://www.linkedin.com/in/hasib009}{linkedin.com/in/hasib009} \\
+        \textbf{GitHub} & : & \href{https://github.com/HasibRockie}{github.com/HasibRockie} \\
+        \textbf{Website} & : & \href{https://hasibrockie.github.io}{hasibrockie.github.io} \\
+    \end{tabular}
+    \vspace{1em}
+\end{center}
+
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% Notes Sections
+
+\notesection{2025-04-19}{Saturday}
+\textbf{Topics Covered:}
+\begin{itemize}
+    \item Definition of Strategic Management
+    \item Levels of Strategy
+    \item Strategic Planning Process
+\end{itemize}
+
+\textbf{Class Summary:}  
+Strategic management involves making decisions and taking actions that enable an organization to achieve its long-term objectives. It encompasses environmental scanning, strategy formulation, implementation, and control.
+
+\vspace{0.5cm}
+\textbf{Important Definitions:}
+\begin{itemize}
+    \item \textit{Strategic Management:} The disciplined effort to make decisions and actions that shape and guide what an organization is, what it does, and why it does it.
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{Notes:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida fermentum velit, non dapibus ex bibendum at.
+
+\vspace{1cm}
+\clearpage 
+
+\notesection{2025-04-21}{Monday}
+\textbf{Topics Covered:}
+\begin{itemize}
+    \item SWOT Analysis
+    \item PESTEL Framework
+    \item Competitive Advantage
+\end{itemize}
+
+\textbf{Class Summary:}  
+A SWOT analysis identifies internal \textit{Strengths} and \textit{Weaknesses}, and external \textit{Opportunities} and \textit{Threats}. The PESTEL framework examines macro-environmental factors impacting businesses: Political, Economic, Social, Technological, Environmental, and Legal.
+
+\vspace{1cm}
+\clearpage
+
+% new note 
+\notesection{2025-04-23}{Wednesday}
+\textbf{Topics Covered:}
+\begin{itemize}
+    \item Corporate Strategy Models
+    \item Communication Channels in Management
+\end{itemize}
+
+\textbf{Class Summary:}  
+Effective communication within organizations relies on the selection of appropriate channels, clarity of message, and alignment with organizational culture.
+\vspace{1cm}
+\clearpage
+
+% end of the note 
+
+
+\end{document}
