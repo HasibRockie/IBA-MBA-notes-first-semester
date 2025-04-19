@@ -1,0 +1,46 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.synctex.gz
+*.vrb
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# PDF output files (optional — if you only want to track .tex and not .pdf)
+# Uncomment if you don't want PDFs tracked
+# *.pdf
+
+# Backup files
+*~
+*.bak
+*.sav
+*.tmp
+*.swp
+*.swo
+
+# VSCode project settings (if using)
+.vscode/
+
+# latexmk build directory
+latexmk/
+
+# Other temp/build directories
+_build/
+_output/
+
