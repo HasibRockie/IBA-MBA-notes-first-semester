@@ -1,0 +1,475 @@
+\documentclass[12pt,a4paper]{book}
+
+% Fonts & Typography — Elegant and Professional
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts} % Sleek, modern font
+\usepackage{microtype}
+
+% Essential Packages
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{parskip}
+
+% Page Geometry — Slim, Clean Margins
+\geometry{
+  a4paper,
+  left=20mm,
+  right=20mm,
+  top=20mm,
+  bottom=20mm
+}
+
+% Header & Footer Styling
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \textit{\nouppercase{\leftmark}}}
+\fancyhead[R]{\small W501: Management of Organizations}
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+% Chapter Title Styling
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter.}{12pt}{}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}{1em}{}
+
+% Table of Contents Styling
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{}
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{2pt}
+\setlength{\cftaftertoctitleskip}{1em}
+
+% Hyperlink Styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={W501: Management of Organizations},
+    pdfpagemode=FullScreen,
+}
+
+% Custom Command for Notes 
+\newcommand{\notesection}[2]{
+  \section*{#1\\ \small \textit{#2}}
+  \phantomsection
+  \addcontentsline{toc}{section}{#1 - #2}
+}
+
+% Document Start 
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{3.5cm}
+    \includegraphics[width=0.28\textwidth]{logo.png}\par\vspace{1.5cm}
+    {\scshape\LARGE University of Dhaka\par}
+    \vspace{0.5cm}
+    {\Large Institute of Business Administration (IBA)\par}
+    \vspace{1.5cm}
+    {\Huge\bfseries Master of Business Administration (MBA)\par}
+    \vspace{1cm}
+    {\Large W501: \textit{Management of Organizations}\par}
+    \vfill
+    {\large Last Updated: \today\par}
+\end{titlepage}
+
+% Author Details Section 
+\section*{Author Details}
+\phantomsection
+\addcontentsline{toc}{section}{Author Details}
+
+\begin{center}
+    \vspace{1em}
+    \begin{tabular}{lll}
+        \textbf{Name} & : & Md Hasibul Islam \\
+        \textbf{Student ID} & : & 201-67-011 \\
+        \textbf{Program} & : & Master of Business Administration (MBA) \\
+        \textbf{Institute} & : & Institute of Business Administration (IBA) \\
+        \textbf{University} & : & University of Dhaka \\
+        \textbf{Email} & : & \href{mailto:hasiee8004@gmail.com}{hasiee8004@gmail.com} \\
+        \textbf{LinkedIn} & : & \href{https://www.linkedin.com/in/hasib009}{linkedin.com/in/hasib009} \\
+        \textbf{GitHub} & : & \href{https://github.com/HasibRockie}{github.com/HasibRockie} \\
+        \textbf{Website} & : & \href{https://hasibrockie.github.io}{hasibrockie.github.io} \\
+    \end{tabular}
+    \vspace{1em}
+\end{center}
+
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% Notes Sections
+
+\notesection{Management Basics}{09-04-25 Saturday}
+
+\textbf{Definition of Management:}
+
+Management is a fundamental and indispensable activity in all organized human efforts. It involves systematically coordinating resources and people to achieve desired goals \textbf{effectively } and \textbf{efficiently }.\\
+\\
+Management is the efficient utilization of resources (physical, financial, human, and informational) to achieve organizational goals. It is a continuous process that involves planning, organizing, leading, and controlling resources to achieve specific objectives.
+
+\textbf{Widely Accepted Definitions:}
+\begin{itemize}
+    \item \textbf{Henri Fayol (1916):} ``To manage is to forecast and plan, to organize, to command, to coordinate and to control.''
+    \item \textbf{Mary Parker Follett (1926):} ``Management is the art of getting things done through people.''
+    \item \textbf{Koontz \& O'Donnell (1976):} ``Management is the process of designing and maintaining an environment in which individuals, working together in groups, efficiently accomplish selected aims.''
+\end{itemize}
+
+\textbf{Key Elements of Management:}
+\begin{enumerate}
+    \item Goal-oriented process
+    \item Group activity
+    \item Continuous process
+    \item Dynamic function
+    \item Resource coordination
+\end{enumerate}
+
+\textbf{Example:}\\
+A \textit{hospital} managing doctors, nurses, and medical supplies to deliver quality healthcare effectively and efficiently.
+
+\vspace{0.5cm}
+
+\textbf{Why Management:}
+
+Management is crucial because it transforms organizational chaos into structured progress. Without proper management, organizations lack direction, coordination, and control.
+
+\textbf{Importance of Management:}
+\begin{enumerate}
+    \item Achieving Goals
+    \item Optimal Resource Utilization
+    \item Establishing a Dynamic Organization
+    \item Creating Team Spirit
+    \item Ensuring Growth and Stability
+\end{enumerate}
+
+\textbf{Example:}\\
+In a \textit{manufacturing firm}, management ensures raw materials are efficiently converted into finished products while maintaining labor management, productivity, and quality standards.
+
+\textbf{Supporting Data:}\\
+A 2022 study by \textit{McKinsey \& Company} revealed companies with strong management practices were \textbf{30\% more productive} and had \textbf{20\% higher profitability} than poorly managed firms.
+
+
+\textbf{Management Levels:}
+
+In organizational structures, management operates through hierarchical levels to ensure proper supervision, decision-making, and resource allocation. Each level has distinct responsibilities and authority.
+
+\textbf{Types of Management Levels:}
+\begin{enumerate}
+    \item \textbf{Top-level Management:}\\
+    Also known as \textit{strategic management}, this level sets organizational vision, long-term goals, policies, and overall strategic direction.
+    
+    \textbf{Characteristics:}
+    \begin{itemize}
+        \item Formulates policies and strategic plans.
+        \item Represents the organization externally.
+        \item Makes long-term, future-oriented decisions.
+        \item Bears final accountability for organizational performance.
+    \end{itemize}
+
+    \item \textbf{Middle-level Management:}\\
+    This is the \textit{administrative management} tier, acting as a bridge between top and lower levels. It implements policies, coordinates departments, and supervises lower managers.
+
+    \textbf{Characteristics:}
+    \begin{itemize}
+        \item Translates top management policies into departmental plans.
+        \item Coordinates cross-departmental activities.
+        \item Provides direction to lower-level managers.
+        \item Responsible for tactical decisions and resource allocation.
+    \end{itemize}
+
+    \item \textbf{Lower-level Management:}\\
+    Often termed \textit{operational or supervisory management}, this level directly oversees operational activities and workforce performance.
+
+    \textbf{Characteristics:}
+    \begin{itemize}
+        \item Directly supervises workers and daily operations.
+        \item Maintains discipline and work quality.
+        \item Reports operational performance to middle management.
+        \item Handles short-term operational decisions.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Example:}\\
+In a \textit{bank}:
+\begin{itemize}
+    \item \textbf{Top-level:} Managing Director (MD), Board of Directors.
+    \item \textbf{Middle-level:} Branch Managers, Regional Managers.
+    \item \textbf{Lower-level:} Cash Officers, Teller Supervisors.
+\end{itemize}
+
+
+\textbf{Definition of Organization:}
+
+An organization is a deliberate and structured social unit, composed of people, working together to achieve specific goals. It involves systematic coordination of activities and allocation of responsibilities to attain common objectives.
+
+\textbf{Widely Accepted Definitions:}
+\begin{itemize}
+    \item \textbf{Chester I. Barnard (1938):} ``An organization is a system of consciously coordinated activities or forces of two or more persons.''
+    \item \textbf{James D. Mooney \& Alan C. Reiley (1931):} ``Organization is the form of every human association for the attainment of a common purpose.''
+\end{itemize}
+
+\textbf{Characteristics of Organizations:}
+\begin{enumerate}
+    \item \textbf{Group of People:} Requires at least two or more individuals.
+    \item \textbf{Common Goal:} Exists to pursue agreed-upon objectives.
+    \item \textbf{Defined Structure:} Clear authority, roles, and hierarchy.
+    \item \textbf{Coordination of Efforts:} Integrated and aligned activities.
+    \item \textbf{Deliberate Design:} Structured system with purposeful arrangement.
+    \item \textbf{Continuity:} Organizations exist beyond individual members.
+    \item \textbf{Others:} Can be autonomous or not, can be financial or non-finacial. Can have social value.
+\end{enumerate}
+
+\textbf{Examples and Classification:}
+
+\begin{itemize}
+    \item \textbf{Political Party:} \\
+    Yes, it is an organization. It has a formal structure, group of people, defined leadership, common goals (political power, policy advocacy), and coordinated activities.
+    
+    \item \textbf{Cricket Board:} \\
+    Yes, it is an organization. It operates with a formal administrative body, specific objectives (governing cricket affairs), a structured hierarchy, and organized activities. (There's a contradictory thoughts about cricket team. It is not an organization, but a team.) 
+
+    \item \textbf{Jewelry Shop on Facebook:} \\
+    No, typically it is not a formal organization unless it possesses structured operations, a formal business plan, a registered identity, designated roles, and systematic coordination. Most small-scale informal online sellers lack these essential organizational characteristics.
+    
+    \item \textbf{University:} \\
+    Yes, it is an organization. It consists of people (faculty, staff, students), follows a hierarchical structure, has formal objectives (education, research), and coordinated processes.
+
+    \item \textbf{Family:} \\
+    No, a family is a social institution, not an organization in the formal managerial sense. It lacks formal objectives and deliberate coordination for commercial or public goals.
+\end{itemize}
+
+
+\textbf{Effectiveness and Efficiency:}
+
+In management, both \textbf{effectiveness} and \textbf{efficiency} are essential performance measures. While closely related, they focus on different dimensions of organizational success.
+
+\textbf{Effectiveness:}
+Effectiveness refers to the extent to which an organization or individual achieves its desired objectives or outcomes. It emphasizes \textit{doing the right things}.
+
+\textbf{Example:}\\
+A hospital successfully treating 95\% of its patients represents high effectiveness.
+
+\textbf{Efficiency:}
+Efficiency is the ability to accomplish a task using the least amount of resources — such as time, money, or effort. It emphasizes \textit{doing things right}.
+
+\textbf{Example:}\\
+A hospital reducing treatment costs by optimizing medical resources while maintaining quality indicates efficiency.
+
+\textbf{Relationship between Effectiveness and Efficiency:}
+Both are complementary but not identical. An organization must be effective to survive and efficient to remain competitive. Achieving one without the other can harm long-term success.
+
+\textbf{Key Relations:}
+\begin{itemize}
+    \item An organization can be effective without being efficient (achieving goals but wasting resources).
+    \item It can be efficient without being effective (optimal resource use but failing to achieve desired goals).
+    \item Ideal management seeks a balance — achieving goals with optimal resource use.
+\end{itemize}
+
+\textbf{Differences between Effectiveness and Efficiency:}
+
+\begin{tabular}{|p{8cm}|p{8cm}|}
+\hline
+\textbf{Effectiveness} & \textbf{Efficiency} \\
+\hline
+Focuses on achieving organizational goals. & Focuses on optimal use of resources. \\
+\hline
+Concerned with output quality and goal fulfillment. & Concerned with input-output ratio and minimizing waste. \\
+\hline
+Represents \textit{what is done}. & Represents \textit{how it is done}. \\
+\hline
+Can exist without efficiency. & Can exist without achieving effectiveness. \\
+\hline
+Long-term strategic importance. & Operational and tactical significance. \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\textbf{Example for Comparison:}\\
+A school achieving 100\% pass rate (effectiveness) by employing excessive resources and overtime is less efficient. Conversely, minimizing teaching resources and costs but having only a 50\% pass rate is efficient but ineffective. True managerial success lies in achieving both.
+
+
+
+\vspace{1cm}
+\clearpage
+ 
+% day 2 
+\notesection{What Managers Do}{13-04-25 Saturday}
+
+\textbf{What Managers Do:}
+
+Managers are responsible for coordinating and overseeing the work of others to accomplish organizational goals. Their activities have been explained through different theoretical frameworks proposed by notable management scholars.
+
+\vspace{0.5cm}
+
+\textbf{Three Approaches to Describe What Managers Do:}
+
+\begin{enumerate}
+    \item \textbf{Functions Managers Perform (Henri Fayol, 1916):}
+
+    Fayol identified five primary managerial functions, which modern theorists have synthesized into four core functions:
+
+    \begin{itemize}
+        \item \textbf{Planning:} 
+        Involves defining organizational goals, establishing strategies for achieving them, and developing comprehensive plans to integrate and coordinate activities. Planning reduces uncertainty and sets a clear direction for the organization.
+        
+        \textit{Example:} A manager prepares an annual business plan outlining production targets, marketing strategy, and financial forecasts.
+
+        \item \textbf{Organizing:} 
+        Entails determining what tasks need to be done, who will do them, how the tasks will be grouped, who reports to whom, and where decisions are to be made. It ensures resources are properly allocated and workflow is streamlined.
+
+        \textit{Example:} Assigning teams for product development, marketing, and logistics based on skills and responsibilities.
+
+        \item \textbf{Leading:}
+        Involves motivating, directing, and otherwise influencing people to work hard to achieve the organization’s goals. Effective leadership fosters cooperation and commitment.
+
+        \textit{Example:} A manager holds regular motivational meetings and one-on-one coaching sessions.
+
+        \item \textbf{Controlling:}
+        The process of monitoring activities to ensure they are being accomplished as planned, and correcting any significant deviations. This ensures objectives are met efficiently.
+
+        \textit{Example:} Tracking monthly sales performance and adjusting marketing tactics if targets are not met.
+    \end{itemize}
+
+    \textbf{Characteristics:}
+    \begin{itemize}
+        \item Sequential yet overlapping and continuous.
+        \item Applicable at all levels of management.
+        \item Essential for achieving organizational efficiency and effectiveness.
+        \item Forms the foundation of modern management theory.
+    \end{itemize}
+
+    \item \textbf{Roles Managers Perform (Henry Mintzberg, 1973):}
+
+    Mintzberg conducted empirical studies and identified ten managerial roles grouped under three categories:
+
+    \textbf{Interpersonal Roles:}
+    \begin{itemize}
+        \item \textit{Figurehead:} Performing ceremonial and symbolic duties on behalf of the organization. Predominantly a top-management responsibility.
+        \item \textit{Leader:} Guiding and motivating subordinates, ensuring performance and development. Important at all levels.
+        \item \textit{Liaison:} Building a network of contacts inside and outside the organization to gather information and maintain relationships.
+    \end{itemize}
+
+    \textbf{Informational Roles:}
+    \begin{itemize}
+        \item \textit{Monitor:} Actively seeking and gathering internal and external information relevant to the organization.
+        \item \textit{Disseminator:} Sharing relevant information within the organization to support decision-making and coordination.
+        \item \textit{Spokesperson:} Communicating information about the organization to external stakeholders such as media, government, and other interest groups.
+    \end{itemize}
+
+    \textbf{Decisional Roles:}
+    \begin{itemize}
+        \item \textit{Entrepreneur:} Initiating and managing change to improve organizational performance.
+        \item \textit{Disturbance Handler:} Addressing unexpected problems and crises to minimize organizational disruption.
+        \item \textit{Resource Allocator:} Deciding where the organization will expend its efforts and resources.
+        \item \textit{Negotiator:} Participating in negotiations with individuals or groups to secure favorable outcomes.
+    \end{itemize}
+
+    \textbf{Characteristics:}
+    \begin{itemize}
+        \item Reflect real-world dynamic managerial behavior.
+        \item Roles are interrelated and often performed simultaneously.
+        \item Applicable to managers at all levels, though emphasis varies.
+        \item Ensures a balance of social, informational, and decisional responsibilities.
+    \end{itemize}
+
+    \item \textbf{Skills Managers Need (Robert L. Katz, 1974):}
+
+    Katz proposed that managerial performance is determined by the following three essential skill sets:
+
+    \begin{itemize}
+        \item \textbf{Technical Skills:} 
+        The ability to apply specialized knowledge and expertise in specific work methods and techniques. Crucial for first-line and lower-level managers who work directly with operational processes.
+
+        \textit{Example:} A plant manager knowing how to operate and troubleshoot machinery.
+
+        \item \textbf{Human (Interpersonal) Skills:}
+        The ability to work with, understand, motivate, and lead individuals or groups. Essential at all levels as it determines how well managers can communicate, resolve conflicts, and build effective teams.
+
+        \textit{Example:} A department head resolving conflicts among team members through effective communication.
+
+        \item \textbf{Conceptual Skills:}
+        The ability to analyze and diagnose complex situations and visualize how different organizational elements fit together. These skills enable strategic decision-making and long-term planning, making them increasingly vital for top-level managers.
+
+        \textit{Example:} A CEO evaluating market trends and realigning organizational strategy.
+    \end{itemize}
+
+    \textbf{Characteristics:}
+    \begin{itemize}
+        \item \textbf{Technical skills:} Predominantly required at lower levels.
+        \item \textbf{Human skills:} Equally vital at all levels.
+        \item \textbf{Conceptual skills:} Most important for top executives.
+        \item The relative importance of each skill shifts across the managerial hierarchy.
+    \end{itemize}
+
+\end{enumerate}
+
+\textbf{Summary Illustration:}
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Approach} & \textbf{Key Focus} & \textbf{Key Contributors} \\
+\hline
+Functions they perform & Planning, Organizing, Leading, Controlling & Henri Fayol \\
+\hline
+Roles they perform & Interpersonal, Informational, Decisional roles & Henry Mintzberg \\
+\hline
+Skills they need & Technical, Human, Conceptual skills & Robert L. Katz \\
+\hline
+\end{tabular}
+
+\textbf{Grapevine: Definition and Example}
+
+The grapevine refers to the informal, unofficial communication network that exists within an organization, outside of formal channels. It is often referred to as the "rumor mill" as it involves the spread of information, whether accurate or not, through interpersonal interactions. The grapevine typically flourishes in environments where formal communication is limited, and its influence can be both positive and negative. 
+
+\textit{Example:} An employee hears through colleagues that the company is planning to lay off a large number of staff. This information is not yet confirmed by the management, but it spreads quickly through informal conversations and can lead to anxiety and rumors within the workforce.
+
+\footnote{Grapevine communication often serves as a crucial source of information for employees, although its reliability varies. Research indicates that while grapevine communication can serve as a faster alternative to official communication, its lack of accuracy can lead to confusion and mistrust within the organization.}
+
+\vspace{1cm}
+
+\textbf{Why Fayol and Mintzberg are Complementary}
+
+Henri Fayol and Henry Mintzberg are often regarded as complementary scholars in management theory due to their distinct yet complementary perspectives on what managers do. Fayol's theory focuses on the *functions* that managers perform, while Mintzberg’s approach examines the *roles* managers take on in the course of their work.
+
+Fayol's framework, developed in the early 20th century, emphasizes a prescriptive approach to management, suggesting that managers must execute certain key functions like planning, organizing, leading, and controlling. Fayol’s work is centered around the structural side of management and provides a clear, systematic model that managers can follow to ensure the organization’s operations run smoothly.
+
+On the other hand, Mintzberg’s work is more descriptive, identifying specific roles that managers play on a daily basis, based on empirical research and observations of managers in real-world settings. Mintzberg’s theory reveals the complexity of managerial work, with its dynamic, multitasking nature, and how managers balance interpersonal, informational, and decisional roles.
+
+These two approaches are complementary in the sense that while Fayol provides a structural guide to what managers *should* do, Mintzberg shows how managers actually *do* it in practice. Fayol’s functions can be seen as the foundation for the roles Mintzberg identifies. For example, a manager performing the “leader” role (Mintzberg) might also be engaged in “leading” as one of Fayol’s functions, and similarly, the role of “entrepreneur” could align with the function of “planning.”
+
+\textit{Example:} A project manager in an organization might simultaneously engage in the “monitoring” role (Mintzberg) to gather progress data, while also executing the function of “controlling” (Fayol) by adjusting resources or strategies based on this information to keep the project on track.
+
+Thus, Fayol and Mintzberg together provide a comprehensive framework for understanding management from both a theoretical and practical perspective. Fayol's focus on function offers a blueprint for effective management, while Mintzberg’s analysis of roles captures the real-world application of those functions.
+
+
+
+\vspace{1cm}
+\clearpage
+
+
+
+% new note 
+\notesection{2025-04-23}{Wednesday}
+\textbf{Topics Covered:}
+
+\vspace{1cm}
+\clearpage
+
+% end of the note 
+
+
+\end{document}
