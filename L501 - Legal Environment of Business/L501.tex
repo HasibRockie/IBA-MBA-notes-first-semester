@@ -1,0 +1,413 @@
+\documentclass[12pt,a4paper]{book}
+
+% Fonts & Typography — Elegant and Professional
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts} % Sleek, modern font
+\usepackage{microtype}
+
+% Essential Packages
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{parskip}
+
+% Page Geometry — Slim, Clean Margins
+\geometry{
+  a4paper,
+  left=20mm,
+  right=20mm,
+  top=20mm,
+  bottom=20mm
+}
+
+% Header & Footer Styling
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \textit{\nouppercase{\leftmark}}}
+\fancyhead[R]{\small L501: Legal Environment of Business}
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+% Chapter Title Styling
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter.}{12pt}{}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}{1em}{}
+
+% Table of Contents Styling
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{}
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{2pt}
+\setlength{\cftaftertoctitleskip}{1em}
+
+% Hyperlink Styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={L501: Legal Environment of Business},
+    pdfauthor={Md Hasibul Islam},
+    pdfpagemode=FullScreen,
+}
+
+% Custom Command for Notes 
+\newcommand{\notesection}[2]{
+  \section*{#1\\ \small \textit{#2}}
+  \phantomsection
+  \addcontentsline{toc}{section}{#1 - #2}
+}
+
+% Document Start 
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{3.5cm}
+    \includegraphics[width=0.28\textwidth]{logo.png}\par\vspace{1.5cm}
+    {\scshape\LARGE University of Dhaka\par}
+    \vspace{0.5cm}
+    {\Large Institute of Business Administration (IBA)\par}
+    \vspace{1.5cm}
+    {\Huge\bfseries Master of Business Administration (MBA)\par}
+    \vspace{1cm}
+    {\Large W501: \textit{Legal Environment of Business}\par}
+    \vfill
+    {\large Last Updated: \today\par}
+\end{titlepage}
+
+% Author Details Section 
+\section*{Author Details}
+\phantomsection
+\addcontentsline{toc}{section}{Author Details}
+
+\begin{center}
+    \vspace{1em}
+    \begin{tabular}{lll}
+        \textbf{Name} & : & Md Hasibul Islam \\
+        \textbf{Student ID} & : & 201-67-011 \\
+        \textbf{Program} & : & Master of Business Administration (MBA) \\
+        \textbf{Institute} & : & Institute of Business Administration (IBA) \\
+        \textbf{University} & : & University of Dhaka \\
+        \textbf{Email} & : & \href{mailto:hasiee8004@gmail.com}{hasiee8004@gmail.com} \\
+        \textbf{LinkedIn} & : & \href{https://www.linkedin.com/in/hasib009}{linkedin.com/in/hasib009} \\
+        \textbf{GitHub} & : & \href{https://github.com/HasibRockie}{github.com/HasibRockie} \\
+        \textbf{Website} & : & \href{https://hasibrockie.github.io}{hasibrockie.github.io} \\
+    \end{tabular}
+    \vspace{1em}
+\end{center}
+
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% Notes Sections
+\notesection{Proposal, Offer, Promise, Acceptance – Definitions, Differences \& Revocation}{21-04-25 Monday}
+
+\textbf{1. Proposal (Offer):}  
+According to Section 2(a) of the Indian Contract Act, 1872,  
+\textit{“When one person signifies to another his willingness to do or to abstain from doing anything, with a view to obtaining the assent of that other, he is said to make a proposal.”}  
+
+In business law, "proposal" and "offer" are often used interchangeably. A valid proposal must be:
+\begin{itemize}
+    \item Communicated to the offeree.
+    \item Made with intent to create legal relations.
+    \item Definite and certain in terms.
+\end{itemize}
+
+\textbf{2. Promise:}  
+As per Section 2(b), a proposal when accepted becomes a promise.  
+\textit{“When the person to whom the proposal is made signifies his assent thereto, the proposal is said to be accepted. A proposal when accepted becomes a promise.”}  
+
+Thus, \textbf{Promise = Proposal + Acceptance}
+
+\textbf{3. Acceptance:}  
+Acceptance must be:
+\begin{itemize}
+    \item Absolute and unqualified.
+    \item Communicated by authorized means.
+    \item Given within a reasonable time or stipulated time.
+\end{itemize}
+
+\textbf{4. Differences among Proposal, Offer, Promise \& Acceptance:}
+
+\begin{center}
+\begin{tabular}{|p{4cm}|p{6cm}|p{6cm}|}
+\hline
+\textbf{Term} & \textbf{Definition} & \textbf{Key Feature} \\
+\hline
+Proposal / Offer & Intention to form contract by doing/refraining from act. & Requires acceptance to be binding. \\
+\hline
+Promise & Accepted offer. & Legally binding. \\
+\hline
+Acceptance & Assent to the proposal. & Converts proposal into a contract. \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{5. Revocation of Proposal and Acceptance:}  
+\begin{itemize}
+    \item \textbf{Section 5 of the Indian Contract Act:} A proposal may be revoked at any time before the communication of its acceptance is complete as against the proposer.
+    \item An acceptance may be revoked at any time before the communication of the acceptance is complete as against the acceptor.
+\end{itemize}
+
+\textbf{Examples (Proposal or Not?):}  
+Below are 20+ situations analyzed to determine if they constitute a proposal:
+
+\begin{enumerate}
+    \item A says, "I will sell my bike to you for \$500" – \textbf{Proposal}.
+    \item An advertisement for a sale on TV – \textbf{Not a proposal}, it's an \textit{invitation to offer}.
+    \item A menu card in a restaurant – \textbf{Not a proposal}.
+    \item Display of goods in a shop with a price tag – \textbf{Not a proposal}.
+    \item A says, "Will you buy my car for \$5,000?" – \textbf{Proposal}.
+    \item A tells B, “I may consider selling my house” – \textbf{Not a proposal}.
+    \item Public auction notice – \textbf{Invitation to offer}.
+    \item A quote or tender submission – \textbf{Proposal}.
+    \item B submits a bid in auction – \textbf{Proposal}.
+    \item A company issues a prospectus – \textbf{Invitation to offer}.
+    \item A person asks, “Can you lend me your book?” – \textbf{Not a legal proposal}.
+    \item X offers Y a job with fixed terms – \textbf{Proposal}.
+    \item A general statement: “I wish someone would buy my house” – \textbf{Not a proposal}.
+    \item A mails a signed letter offering to sell goods – \textbf{Proposal}.
+    \item A unilateral offer of reward for finding a lost pet – \textbf{Proposal}.
+    \item Online listing of a laptop on eBay – \textbf{Proposal} (depending on platform rules).
+    \item Negotiation discussion: “I might accept \$1000 for this item” – \textbf{Not a proposal}.
+    \item A says, “If you pay today, I will give a discount” – \textbf{Proposal}.
+    \item A invitation to tender (e.g., govt contract) – \textbf{Invitation to offer}.
+    \item B’s submission of the tender form – \textbf{Proposal}.
+    \item A says “Let’s form a partnership” – \textbf{Proposal}.
+    \item A makes a standing offer to supply items – \textbf{Proposal}.
+\end{enumerate}
+
+\textbf{Note:} The difference between \textit{“invitation to offer”} and an actual \textbf{proposal} is crucial. An invitation invites others to make offers, whereas a proposal is the starting point of contractual intent.
+
+\textbf{Conclusion:}  
+Understanding the conceptual differences between proposal, promise, and acceptance is crucial in legal and business transactions. Clear communication, intent to be bound, and adherence to legal formalities determine the enforceability of contracts. Revocation rights add further complexity and protection for both parties involved.
+
+
+
+\textbf{Definition of Contract:}  
+According to Section 2(h) of the Indian Contract Act, 1872:  
+\textit{“A contract is an agreement enforceable by law.”}  
+Thus, for any agreement to be a contract, it must fulfill these essentials:
+\begin{itemize}
+    \item Lawful offer and lawful acceptance.
+    \item Intention to create legal relationship.
+    \item Lawful consideration.
+    \item Capacity of parties.
+    \item Free consent.
+    \item Lawful object.
+\end{itemize}
+
+\vspace{0.4cm}
+\textbf{Below are 20+ examples examined to determine if they constitute contracts:}
+
+\begin{enumerate}
+    \item A agrees to sell B his house for 50 lakhs. – \textbf{Contract} (meets all essentials).
+    \item A invites B for dinner. – \textbf{Not a Contract} (no legal intention).
+    \item A promises to give B 1 lakh out of love. – \textbf{Not a Contract} (no consideration).
+    \item B offers A 10,000 for his phone, A accepts. – \textbf{Contract}.
+    \item X and Y agree to smuggle goods across borders. – \textbf{Not a Contract} (illegal object).
+    \item A minor agrees to buy a laptop on EMI. – \textbf{Not a Contract} (incapacity of minor).
+    \item A promises B to marry her without any intention of doing so. – \textbf{Not a Contract} (no real intention).
+    \item A agrees to supply 100 chairs to B at 500 per chair. – \textbf{Contract}.
+    \item A enters into agreement under threat. – \textbf{Not a Contract} (absence of free consent).
+    \item A wins a lottery, government promises to pay. – \textbf{Contract} (in case of valid government scheme).
+    \item A advertises a reward for lost pet, B finds it and claims reward. – \textbf{Contract}.
+    \item A agrees to work for B without salary. – \textbf{Not a Contract} (no consideration unless a gift of service is intended and accepted).
+    \item A contracts B to kill a person. – \textbf{Not a Contract} (unlawful object).
+    \item Verbal agreement to sell a cow for 20,000, accepted and paid. – \textbf{Contract}.
+    \item Casual promise at a party to lend money. – \textbf{Not a Contract} (no legal intention).
+    \item A enters into contract with a person of unsound mind. – \textbf{Not a Contract}.
+    \item A hires B to paint his house for 15,000. – \textbf{Contract}.
+    \item A and B mutually agree to form a business with capital investment. – \textbf{Contract}.
+    \item A bets 1000 on a cricket match with B. – \textbf{Not a Contract} (void under wagering agreements).
+    \item A contracts with B to deliver goods, consideration given. – \textbf{Contract}.
+    \item A bribes an officer to pass a tender. – \textbf{Not a Contract} (against public policy).
+    \item A writes a letter offering services to B, B accepts. – \textbf{Contract}.
+    \item A sells his bicycle to B for 3,000, B pays instantly. – \textbf{Contract}.
+    \item A and B agree to commit cyber fraud. – \textbf{Not a Contract} (unlawful purpose).
+    \item A sells a book to B with mutual consent and price. – \textbf{Contract}.
+\end{enumerate} 
+
+\textbf{Key Insights:}
+\begin{itemize}
+    \item A \textbf{social or moral agreement} is not enforceable (e.g., dinner invitations).
+    \item \textbf{Illegal or immoral agreements} are void ab initio (from the beginning).
+    \item \textbf{Contracts with minors or mentally unsound persons} are generally void.
+    \item \textbf{Consideration} and \textbf{legal object} are core components.
+\end{itemize}
+
+\textbf{Conclusion:}  
+All contracts are agreements, but not all agreements are contracts. The key lies in legal enforceability. Every case must be assessed against the core criteria of a valid contract to determine its legitimacy and enforceability under law.
+
+\vspace{1cm} 
+
+\textbf{Chapter 2: Offer and Acceptance Exercise Problems} 
+\vspace{0.5cm} 
+
+\textbf{1. When is an offer completed? How and when may an offer be revoked?}  
+
+An offer is completed when it is communicated to the offeree (Sec. 4, Indian Contract Act).  
+\textbf{Revocation of an offer} (Sec. 5) is valid if:
+\begin{itemize}
+    \item It is done before the communication of acceptance is complete against the proposer.
+    \item Revocation must be communicated to the offeree.
+\end{itemize}
+
+\textit{Example:} A offers to sell a bike to B. If B posts an acceptance letter and A sends a revocation after that, the revocation is invalid.
+
+\vspace{0.5cm}
+\textbf{2. (a) How may an offer be terminated?}
+
+An offer can be terminated in the following ways:
+\begin{itemize}
+    \item Revocation before acceptance.
+    \item Rejection by offeree.
+    \item Lapse of time.
+    \item Death or insanity of offeror.
+    \item Non-fulfillment of a condition precedent.
+\end{itemize}
+
+\textbf{(b)} A offers to sell B his horse for one thousand and tells B, "This offer will remain open for one week." B rejects the offer the next day. Later in the week, B changes his mind and accepts the offer.  
+\textbf{No contract is formed.} Once the offer is rejected, it cannot be revived unless A makes the offer again.
+
+\vspace{0.5cm}
+\textbf{3. "Acceptance is to offer what a lighted match is to a train of gunpowder." Discuss.}  
+
+This metaphor, coined by Anson, means that just as a lighted match completes the chain for an explosion, acceptance finalizes an offer into a contract. There’s no turning back once acceptance is made and communicated – the contract is formed.
+
+\vspace{0.5cm}
+\textbf{4. "An offer is made when and not until, it is communicated to the offeree".}  
+
+Communication is key to a valid offer.  
+\textit{Example:} A writes a letter offering B his car but never posts it. There is no offer.  
+Unless the offeree is made aware, an offer cannot be accepted.
+
+\vspace{0.5cm}
+\textbf{5. Define offer and acceptance. When are they complete if made through post?}  
+
+\textbf{Offer:} Sec. 2(a) – Willingness to do or abstain from an act to obtain assent.  
+\textbf{Acceptance:} Sec. 2(b) – When the offeree signifies assent.
+
+\textbf{Completion by post:}  
+\begin{itemize}
+    \item \textbf{Offer} is complete when received by offeree.
+    \item \textbf{Acceptance} is complete as against proposer when it is posted, and against acceptor when received.
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{6. Rules of Offer via Post and Telephone:}  
+
+\textbf{By Post:}
+\begin{itemize}
+    \item Acceptance is complete when posted.
+    \item Revocation of offer must reach before acceptance is posted.
+\end{itemize}
+
+\textbf{By Telephone:}
+\begin{itemize}
+    \item Acceptance must be clearly heard and understood.
+    \item No contract if communication fails or is unclear.
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{7. "A mere mental acceptance, not evidenced by words or conduct is in the eye of law no acceptance."}  
+
+True. Acceptance must be communicated. Thinking of accepting is not sufficient.  
+\textit{Example:} A decides to accept an offer but doesn’t inform B. No contract arises.
+
+\vspace{0.5cm}
+\textbf{8. Define 'Acceptance'. Essentials of Valid Acceptance:}  
+
+Sec. 2(b): Acceptance is the act of signifying assent.  
+\textbf{Essentials:}
+\begin{itemize}
+    \item Must be absolute and unconditional.
+    \item Must be communicated.
+    \item Must be in the prescribed mode.
+    \item Must be made while the offer is still open.
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{9. "Acceptance must be absolute, and must correspond with the terms of the offer."}  
+
+This is the \textbf{mirror image rule}.  
+\textit{Example:} A offers to sell a product for ten thousand. B replies, “I accept for nine thousand.” → Counter-offer, not acceptance.
+
+\vspace{0.5cm}
+\textbf{10. (a) Meaning of Offer and Acceptance:}  
+
+Already defined above in Q5.
+
+\textbf{(b)(i)} A offers to sell goods by letter on March 1. B receives it on March 3.  
+A can revoke before B posts acceptance. So yes, A can revoke before March 4.
+
+\textbf{(ii)} B posts acceptance on March 4. A receives it on March 6.  
+B cannot revoke after posting. So, \textbf{No}, B cannot revoke acceptance.
+
+\vspace{0.5cm}
+\textbf{11. (a) Define Proposal:}  
+As per Sec. 2(a), willingness to do or abstain from an act with a view to obtaining assent.
+
+\textbf{(b) Communication of Offer:}
+\begin{itemize}
+    \item Must reach the offeree.
+    \item Must be clear and specific.
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{12. Objective Questions:}
+
+\textbf{(a)} Acceptance by conduct: Acceptance shown by action.  
+\textit{Example:} Taking a train ticket implies acceptance of the travel terms.
+
+\textbf{(b)} An advertisement to sell a thing by auction is:  
+\textbf{Answer: (b) An invitation to offer.}
+
+\vspace{0.5cm}
+\textbf{13. Problems:}
+
+\textbf{(a)} A proposes via letter. B accepts by letter.  
+\textbf{A can revoke} before B posts acceptance.  
+\textbf{B can revoke} before A receives acceptance.
+
+\textbf{(b)} X’s revocation reaches Y before the offer does.  
+\textbf{No valid offer} reached Y, hence no contract.
+
+\textbf{(c)} B can revoke acceptance before it reaches A.  
+So, if revocation is communicated before delivery, it is valid.
+
+\textbf{(d)} A offers a reward for doing a task. B does the task without knowledge of the reward.  
+\textbf{No contract.} Knowledge of offer is essential.
+
+\textbf{(e)} A posts acceptance, but it's lost.  
+\textbf{Contract is still valid.} Acceptance is complete upon posting.
+
+
+
+\vspace{1cm}
+\clearpage
+
+
+% new note 
+\notesection{2025-04-23}{Wednesday}
+
+\vspace{1cm}
+\clearpage
+
+% end of the note 
+
+
+\end{document}
