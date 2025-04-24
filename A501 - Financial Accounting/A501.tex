@@ -1,0 +1,482 @@
+\documentclass[12pt,a4paper]{book}
+
+% Fonts & Typography — Elegant and Professional
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts} % Sleek, modern font
+\usepackage{microtype}
+
+% Essential Packages
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{parskip}
+\usepackage{array, booktabs}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{longtable}
+
+% Page Geometry — Slim, Clean Margins
+\geometry{
+  a4paper,
+  left=20mm,
+  right=20mm,
+  top=20mm,
+  bottom=20mm
+}
+
+% Header & Footer Styling
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \textit{\nouppercase{\leftmark}}}
+\fancyhead[R]{\small A501: Financial Accouting} 
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+% Chapter Title Styling
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter.}{12pt}{}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}{1em}{}
+
+% Table of Contents Styling
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{}
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{2pt}
+\setlength{\cftaftertoctitleskip}{1em}
+
+% Hyperlink Styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={A501: Financial Accouting},
+    pdfauthor={Md Hasibul Islam},
+    pdfpagemode=FullScreen,
+}
+
+% Custom Command for Notes 
+\newcommand{\notesection}[2]{
+  \section*{#1\\ \small \textit{#2}}
+  \phantomsection
+  \addcontentsline{toc}{section}{#1 - #2}
+}
+
+% Document Start 
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{3.5cm}
+    \includegraphics[width=0.28\textwidth]{logo.png}\par\vspace{1.5cm}
+    {\scshape\LARGE University of Dhaka\par}
+    \vspace{0.5cm}
+    {\Large Institute of Business Administration (IBA)\par}
+    \vspace{1.5cm}
+    {\Huge\bfseries Master of Business Administration (MBA)\par}
+    \vspace{1cm}
+    {\Large A501: \textit{Financial Accouting}\par}
+    \vfill
+    {\large Last Updated: \today\par}
+\end{titlepage}
+
+% Author Details Section 
+\section*{Author Details}
+\phantomsection
+\addcontentsline{toc}{section}{Author Details}
+
+\begin{center}
+    \vspace{1em}
+    \begin{tabular}{lll}
+        \textbf{Name} & : & Md Hasibul Islam \\
+        \textbf{Student ID} & : & 201-67-011 \\
+        \textbf{Program} & : & Master of Business Administration (MBA) \\
+        \textbf{Institute} & : & Institute of Business Administration (IBA) \\
+        \textbf{University} & : & University of Dhaka \\
+        \textbf{Email} & : & \href{mailto:hasiee8004@gmail.com}{hasiee8004@gmail.com} \\
+        \textbf{LinkedIn} & : & \href{https://www.linkedin.com/in/hasib009}{linkedin.com/in/hasib009} \\
+        \textbf{GitHub} & : & \href{https://github.com/HasibRockie}{github.com/HasibRockie} \\
+        \textbf{Website} & : & \href{https://hasibrockie.github.io}{hasibrockie.github.io} \\
+    \end{tabular}
+    \vspace{1em}
+\end{center}
+
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage 
+
+% Notes Sections
+\notesection{Definition and Characteristics: Accounting and Transaction}{10-04-25 Thursday}
+
+\textbf{Accounting} is the systematic process of identifying, recording, classifying, summarizing, and communicating financial information to aid economic decision-making. It serves as the language of business and provides a framework for understanding a firm's financial position and performance.
+
+\textbf{Key Characteristics of Accounting:}
+\begin{itemize}
+    \item \textbf{Systematic}: Follows a standard process and principles (GAAP or IFRS).
+    \item \textbf{Historical and Predictive}: Reflects past events and supports future planning.
+    \item \textbf{Quantitative}: Concerned primarily with monetary information.
+    \item \textbf{Reliable and Verifiable}: Based on evidence (e.g., invoices, receipts).
+    \item \textbf{Comparable and Consistent}: Enables year-on-year or firm-to-firm comparison.
+\end{itemize}
+
+\textbf{Example:} A company sells a product for \$1,000. The sale is recorded in the accounting books under revenue (income), and cash or receivable is increased by \$1,000.
+
+\textbf{Transaction:} Any business event that has a financial impact on the entity and can be reliably measured.
+
+\textbf{Characteristics of a Transaction:}
+\begin{itemize}
+    \item \textbf{Financial Impact}: Affects assets, liabilities, equity, income, or expenses.
+    \item \textbf{Dual Aspect}: Every transaction has a debit and a credit effect.
+    \item \textbf{Measurable in Money}: Must be quantifiable in monetary terms.
+\end{itemize}
+
+\textbf{Example:} Paying salary of \$5,000 – decreases cash (asset) and increases expense.
+
+\vspace{0.5cm}
+
+\textbf{Examples: Is it a Transaction?}
+\begin{itemize}
+    \item \textbf{Purchased machinery for cash} – \textit{Yes, it affects assets (machinery and cash)}.
+    \item \textbf{Signed a contract to deliver goods next month (no advance received)} – \textit{No, no financial impact yet}.
+    \item \textbf{Paid salaries to employees} – \textit{Yes, it reduces cash and increases expenses}.
+    \item \textbf{Owner invests capital into the business} – \textit{Yes, it increases assets and equity}.
+    \item \textbf{Employee promoted, no monetary change} – \textit{No, it is not measurable in monetary terms}.
+    \item \textbf{Received utility bill (not yet paid)} – \textit{Yes, it increases liabilities and expenses}.
+    \item \textbf{Customer places an order (no payment yet)} – \textit{No, it's a future event with no current financial effect}.
+    \item \textbf{Sold goods on credit} – \textit{Yes, it increases accounts receivable and revenue}.
+    \item \textbf{Declared dividend (not paid yet)} – \textit{Yes, it creates a liability}.
+    \item \textbf{Paid electricity bill} – \textit{Yes, it decreases cash and increases expense}.
+    \item \textbf{Depreciation of machinery recorded} – \textit{Yes, it increases expense and reduces asset value}.
+    \item \textbf{Appointed new auditor} – \textit{No, unless fees are paid or accrued}.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Types of Accounting Reports and Their Uses}
+
+\begin{itemize}
+    \item \textbf{Income Statement (Profit \& Loss Statement)}: Shows revenues and expenses over a period; indicates profitability.\\
+    \textit{Use: Assess operational performance.}
+    
+    \item \textbf{Balance Sheet (Statement of Financial Position)}: Displays assets, liabilities, and owner’s equity at a specific point in time.\\
+    \textit{Use: Understand financial position and solvency.}
+    
+    \item \textbf{Cash Flow Statement (Statement of Cashflows)}: Reports cash inflows and outflows from operating, investing, and financing activities.\\
+    \textit{Use: Monitor liquidity and cash management.}
+    
+    \item \textbf{Statement of changes in Equity (Remained earned statement)}: Explains changes in equity from investments, withdrawals, and retained earnings.\\
+    \textit{Use: Analyze changes in owner’s interest in the firm.}
+\end{itemize}
+
+\textbf{Characteristics of Good Accounting Reports:}
+\begin{itemize}
+    \item \textbf{Relevance}: Information must aid decision-making.
+    \item \textbf{Faithful Representation}: Complete, neutral, and free from error.
+    \item \textbf{Understandability}: Clear presentation for users.
+    \item \textbf{Comparability}: Allows evaluation across periods and entities.
+    \item \textbf{Timeliness}: Provided in time to be useful.
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{Users of Accounting Information}
+
+\begin{itemize}
+    \item \textbf{Internal Users:}
+    \begin{itemize}
+        \item Managers – for planning and control.
+        \item Employees – job security and performance.
+        \item Owners – profit evaluation.
+    \end{itemize}
+    
+    \item \textbf{External Users:}
+    \begin{itemize}
+        \item Investors – profitability and risk analysis.
+        \item Creditors – repayment ability.
+        \item Government – taxation and regulatory compliance.
+        \item Customers – supplier stability.
+        \item Regulatory Bodies – ensure legal conformity.
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{Examples of Elements in Accounting :}
+
+\begin{tabular}{|p{4cm}|p{12cm}|}
+\hline
+\textbf{Category} & \textbf{Examples} \\
+\hline
+\textbf{Assets} & 
+Cash, Bank Balance, Accounts Receivable, Inventory, Prepaid Insurance, Office Supplies, Furniture, Equipment, Buildings, Land, Vehicles, Patents, Copyrights, 
+Trademarks, Goodwill, Long-term Investments, Marketable Securities \\
+\hline
+\textbf{Liabilities} & 
+Accounts Payable, Notes Payable, Accrued Expenses (e.g., Wages Payable, Interest Payable), Unearned Revenue, Loans Payable, Bonds Payable, Taxes Payable, Deferred Revenue, Lease Obligations, Credit Card Payable, Mortgage Payable \\
+\hline
+\textbf{Owner’s Equity} & 
+Capital, Retained Earnings, Drawings, Owner’s Contributions, Common Stock, Preferred Stock, Additional Paid-in Capital, Treasury Stock, Accumulated Other Comprehensive Income \\
+\hline
+\textbf{Income (Revenue)} & 
+Sales Revenue, Service Revenue, Interest Income, Rental Income, Commission Revenue, Dividend Income, Consulting Revenue, Royalties Earned, Investment Income, Subscription Revenue, Gain on Sale of Asset, Foreign Exchange Gain \\
+\hline
+\textbf{Expenses} & 
+Salaries and Wages Expense, Rent Expense, Utilities Expense, Insurance Expense, Depreciation Expense, Amortization Expense, Interest Expense, Advertising Expense, Supplies Expense, Repairs and Maintenance Expense, Legal Fees, Audit Fees, Delivery Expense, Telephone Expense, Training Expense, Bad Debts Expense, Loss on Disposal of Asset \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\textbf{Sub-types of Owner’s Equity:}
+
+\begin{tabular}{|p{4cm}|p{6cm}|p{6cm}|}
+\hline
+\textbf{Type} & \textbf{Definition} & \textbf{Example} \\
+\hline
+\textbf{Share Capital} & Amount invested by shareholders in exchange for shares of ownership. & An investor purchases 1,000 shares of a company at \$10 each; \$10,000 is recorded as share capital. \\
+\hline
+\textbf{Retained Earnings} & Portion of net income retained in the business after dividends are paid. & A company earns \$50,000 profit and pays \$10,000 in dividends; \$40,000 is retained earnings. \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm} 
+
+\textbf{Types of Revenue and Expenses:}
+
+\begin{itemize}
+    \item \textbf{Revenue:}
+    \begin{itemize}
+        \item \textbf{Sales Revenue} – Income from selling goods (e.g., merchandise sales by a retailer).
+        \item \textbf{Service Revenue} – Income from providing services (e.g., consulting fees, legal services).
+    \end{itemize}
+
+    \item \textbf{Operating Expenses:}
+    \begin{itemize}
+        \item Rent Expense
+        \item Salaries and Wages
+        \item Utilities Expense
+        \item Insurance Expense
+        \item Advertising Expense
+        \item Depreciation and Amortization
+        \item Repairs and Maintenance
+        \item Office Supplies
+    \end{itemize}
+
+    \item \textbf{Non-Operating Income:}
+    \begin{itemize}
+        \item Interest Income
+        \item Dividend Income
+        \item Gain on Sale of Assets
+        \item Rental Income (if not core business)
+        \item Foreign Exchange Gain
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.5cm} 
+
+\textbf{Types of Business Entities and Comparison:}
+
+\begin{tabular}{|p{3cm}|p{4cm}|p{4cm}|p{5cm}|}
+\hline
+\textbf{Criteria} & \textbf{Proprietorship} & \textbf{Partnership} & \textbf{Company (Corporation)} \\
+\hline
+\textbf{Ownership} & Single individual & 2 - 20 partners & 2 - unlimited Shareholders \\
+\hline
+\textbf{Legal Identity} & No separate legal entity & Not a separate legal entity (except LLP) & Separate legal entity \\
+\hline
+\textbf{Liability} & Unlimited liability & Unlimited (except LLP) & Limited to shareholding \\
+\hline
+\textbf{Capital Source} & Personal funds & Partner contributions & Share issuance, retained earnings \\
+\hline
+\textbf{Regulation} & Minimal legal formalities & Moderate regulation & Heavily regulated by company laws \\
+\hline
+\textbf{Continuity} & Ends on owner's death or withdrawal & Ends on partner exit (unless reconstituted) & Perpetual succession \\
+\hline
+\textbf{Taxation} & Taxed as personal income & Taxed as personal income of partners & Separate entity, corporate tax applies \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+\clearpage
+
+\vspace{0.5cm}
+
+\notesection{Standard Accounting Reports with Examples}{17-04-25 Thursday}
+\textbf{Standard Accounting Reports with Examples:}
+
+\begin{itemize}
+    \item \textbf{1. Income Statement (Profit and Loss Statement):}
+
+    \begin{tabular}{|p{10cm}|p{5.5cm}|}
+    \hline
+    \textbf{Particulars} & \textbf{Amount (USD)} \\
+    \hline
+    Sales Revenue & 120,000 \\
+    \hline
+    Less: Cost of Goods Sold (COGS) & 70,000 \\
+    \hline
+    \textbf{Gross Profit\footnotemark[1]} & \textbf{50,000} \\
+    \hline
+    Less: Operating Expenses & 25,000 \\
+    \hline
+    \textbf{Net Operating Income\footnotemark[2]} & \textbf{25,000} \\
+    \hline
+    Add: Non-operating Income (Interest Income) & 3,000 \\
+    \hline
+    Less: Interest Expense & 2,000 \\
+    \hline
+    \textbf{Profit Before Tax (PBT)\footnotemark[3]} & \textbf{26,000} \\
+    \hline
+    Less: Income Tax Expense & 6,000 \\
+    \hline
+    \textbf{Net Income\footnotemark[4]} & \textbf{20,000} \\
+    \hline
+    \end{tabular}
+
+    \footnotetext[1]{Also known as: Gross Margin}
+    \footnotetext[2]{Also known as: Operating Profit, EBIT (Earnings Before Interest and Tax)}
+    \footnotetext[3]{Also known as: Earnings Before Tax (EBT)}
+    \footnotetext[4]{Also known as: Net Profit, Net Earnings, Bottom Line}
+
+    \vspace{0.5cm}
+    \item \textbf{2. Balance Sheet (as of a specific date):}
+
+    \begin{tabular}{|p{5.5cm}|p{5cm}|p{5cm}|}
+    \hline
+    \textbf{Assets} & \textbf{Liabilities} & \textbf{Owner’s Equity} \\
+    \hline
+    Cash: 15,000 & Accounts Payable: 20,000 & Capital: 10,000 \\
+    Accounts Receivable: 10,000 & Bank Loan: 30,000 & Retained Earnings: 15,000 \\
+    Inventory: 25,000 &  &  \\
+    Equipment: 35,000 &  &  \\
+    \hline
+    \textbf{Total: 85,000} & \textbf{Total: 50,000} & \textbf{Total: 35,000} \\
+    \hline
+    \end{tabular}
+
+    \vspace{0.5cm}
+    \item \textbf{3. Cash Flow Statement:}
+
+    \begin{tabular}{|p{10cm}|p{5cm}|}
+    \hline
+    \textbf{Cash Flows from Operating Activities} & \textbf{Amount (USD)} \\
+    \hline
+    Cash received from customers & 110,000 \\
+    Cash paid for operating expenses & (80,000) \\
+    \textbf{Net Cash from Operating Activities} & \textbf{30,000} \\
+    \hline
+    \textbf{Cash Flows from Investing Activities} & \\
+    \hline
+    Purchase of equipment & (20,000) \\
+    \textbf{Net Cash from Investing Activities} & \textbf{(20,000)} \\
+    \hline
+    \textbf{Cash Flows from Financing Activities} & \\
+    \hline
+    Proceeds from bank loan & 10,000 \\
+    Owner capital contribution & 5,000 \\
+    \textbf{Net Cash from Financing Activities} & \textbf{15,000} \\
+    \hline
+    \textbf{Net Increase in Cash} & \textbf{25,000} \\
+    \hline
+    \end{tabular}
+
+    \vspace{0.5cm}
+    \item \textbf{4. Statement of Owner’s Equity:}
+
+    \begin{tabular}{|p{8cm}|p{5cm}|}
+    \hline
+    \textbf{Particulars} & \textbf{Amount (USD)} \\
+    \hline
+    Beginning Capital & 30,000 \\
+    
+    Add: Owner Contribution & 5,000 \\
+    Less: Owner Withdrawals & (10,000) \\
+    Add: Net Profit & 20,000 \\
+    Less: Divident & (10,000) \\
+    \hline
+    \textbf{Ending Capital} & \textbf{35,000} \\
+    \hline
+    \end{tabular}
+
+\end{itemize}
+
+
+\vspace{0.5cm} 
+
+\vspace{0.5cm}
+\section*{Question}
+Sakiful Alam and Aziz Khan opened a web consulting business called \textbf{Money Laundering Services Pvt. Ltd.} and completed the following transactions in its first month of operations:
+
+\begin{itemize}
+    \item \textbf{June 1:} Alam and Khan invested BDT 80,000 cash along with office equipment valued at BDT 26,000 in the company.
+    \item \textbf{June 2:} The company prepaid BDT 9,000 cash for 12 months' rent for office space. \textit{(Hint: Debit Prepaid Rent for BDT 9,000)}
+    \item \textbf{June 3:} The company made credit purchases for BDT 8,000 in office equipment and BDT 3,600 in office supplies. Payment is due within 10 days.
+    \item \textbf{June 6:} The company completed services for a client and immediately received BDT 4,000 cash.
+    \item \textbf{June 9:} The company completed a BDT 6,000 project for a client, who must pay within 30 days.
+    \item \textbf{June 13:} The company paid BDT 11,600 cash to settle the account payable created on June 3.
+    \item \textbf{June 19:} The company paid BDT 2,400 cash for the premium on a 12-month insurance policy. \textit{(Hint: It is prepayment)}
+    \item \textbf{June 22:} The company received BDT 4,400 cash as partial payment for the work completed on June 9.
+    \item \textbf{June 25:} The company completed work for another client for BDT 2,890 on credit.
+    \item \textbf{June 28:} The company gave BDT 5,500 to Alam and Sakiful in cash as dividends.
+    \item \textbf{June 29:} The company purchased BDT 600 of additional office supplies on credit.
+    \item \textbf{June 30:} The company paid BDT 435 cash for this month's utility bill.
+\end{itemize}
+
+\clearpage
+\begin{center}
+  \textbf{Money Laundering Services Pvt. Ltd.} \\
+  \textbf{Balance Sheet as of June 30} \\
+  \vspace{0.5cm} 
+\renewcommand{\arraystretch}{1.4}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|p{3.5cm}|r||p{3.5cm}|r||p{3.5cm}|r|}
+\hline
+\textbf{Date} & \multicolumn{2}{c||}{\textbf{Assets}} & \multicolumn{2}{c||}{\textbf{Liabilities}} & \multicolumn{2}{c|}{\textbf{Owner's Equity}} \\
+\hline
+ & \textbf{Account} & \textbf{BDT} & \textbf{Account} & \textbf{BDT} & \textbf{Account} & \textbf{BDT} \\
+\hline
+June 1 & Cash & 80,000 & & & Shared Capital & 106,000 \\
+ & Office Equipment & 26,000 & & & & \\
+June 2 & Prepaid Rent & 9,000 & & & & \\
+ & Cash (Paid Rent) & (9,000) & & & & \\
+June 3 & Office Equipment & 8,000 & Accounts Payable & 11,600 & & \\
+ & Office Supplies & 3,600 & & & & \\
+June 6 & Cash (Revenue) & 4,000 & & & Retained Earnings & 4,000 \\
+June 9 & Accounts Receivable & 6,000 & & & Retained Earnings & 6,000 \\
+June 13 & Cash Payment & (11,600) & A/P Settled & (11,600) & & \\
+June 19 & Prepaid Insurance & 2,400 & & & & \\
+ & Cash (Paid Insurance) & (2,400) & & & & \\
+June 22 & Cash (AR Collected) & 4,400 & & & & \\
+& Accounts Receivable & (4,400) & & & & \\
+June 25 & Accounts Receivable & 2,890 & & & Revenue & 2,890 \\
+June 28 & Cash (Dividends) & (5,500) & & & Dividends & (5,500) \\
+June 29 & Office Supplies & 600 & Accounts Payable & 600 & & \\
+June 30 & Utilities Expense & (435) & & & Expenses & (435) \\
+\hline
+\textbf{} & \textbf{Total Assets} & \textbf{113,555} & \textbf{Total Liabilities} & \textbf{600} & \textbf{Total Owner's Equity} & \textbf{112,955} \\
+\hline
+\end{tabular}
+}
+\end{center}
+
+\vspace{0.5cm}
+
+
+\vspace{1cm} 
+\clearpage 
+
+
+
+% end of the note 
+
+
+\end{document}
