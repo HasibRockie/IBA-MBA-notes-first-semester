@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{book}
+\documentclass[10pt,a4paper]{book}
 
 % Fonts & Typography — Elegant and Professional
 \usepackage[T1]{fontenc}
@@ -15,12 +15,29 @@
 \usepackage{geometry}
 \usepackage{parskip}
 
+
+% Basic formatting and itemize
+\usepackage{enumitem}
+
+% For spacing commands like \vspace
+\usepackage{setspace}
+
+% TikZ library for drawing diagrams
+\usepackage{tikz}
+\usetikzlibrary{positioning} % Allows using "right=of", "above=of", etc.
+\usetikzlibrary{shapes.geometric} % Allows more node shapes like circles, rectangles
+\usetikzlibrary{arrows.meta} % For arrow styles like ->
+
+% Optional: For fancy fonts or improved visuals
+\usepackage{lmodern}
+
+
 % Page Geometry — Slim, Clean Margins
 \geometry{
   a4paper,
-  left=20mm,
-  right=20mm,
-  top=20mm,
+  left=10mm,
+  right=10mm,
+  top=25mm,
   bottom=20mm
 }
 
@@ -686,6 +703,211 @@ AI is revolutionizing management by enabling \textbf{data-driven decision-making
 
 \vspace{1cm}
 \clearpage
+
+\textbf{Background:}  
+Netflix, founded in 1997 as a DVD rental service, successfully transformed itself into a global digital streaming platform and original content producer, redefining entertainment consumption.
+
+\vspace{0.5cm}
+
+\textbf{Contemporary Management Practices:}
+
+\begin{itemize}
+
+    \item \textbf{Boundaryless Organization:}  
+    Netflix adopted a flat organizational structure encouraging open information sharing across departments. Its culture of “freedom and responsibility” allowed decision-making autonomy at every level.
+
+    \item \textbf{Emphasis on DEI:}  
+    Netflix’s inclusion initiatives ensured storytelling from diverse backgrounds. Their DEI report is transparently published, aiming for representation across all levels.
+
+    \item \textbf{Navigating VUCA Environment:}  
+    In 2013, Netflix pivoted to original content creation (e.g., "House of Cards") predicting competition would intensify. This strategic foresight enabled resilience amid new entrants like Disney+, Apple TV+.
+
+    \item \textbf{Contingent Workforce Management:}  
+    Netflix works with independent producers, freelance directors, and content creators globally, balancing quality control with creative freedom.
+
+    \item \textbf{Balancing Agility and Stability:}  
+    Rapid innovation cycles (new genres, interactive films like "Bandersnatch") were balanced by a stable backend of world-class recommendation algorithms and efficient streaming infrastructure.
+
+    \item \textbf{Commitment to Sustainability and Governance:}  
+    Netflix set targets for net-zero greenhouse gas emissions by the end of 2022 under its “Net Zero + Nature” initiative.
+
+    \item \textbf{Harnessing Digital Transformation:}  
+    Through predictive analytics, machine learning algorithms for personalized recommendations, and cloud computing (AWS partnership), Netflix became a model digital enterprise.
+
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Key Learning:}  
+\textit{Netflix illustrates how modern organizations must simultaneously embrace innovation, social responsibility, and technological disruption to thrive in contemporary markets.}
+
+\vspace{1cm}
+\clearpage
+
+% new day 
+
+\notesection{Managing the External Environment}{23-04-25 Wednesday}
+
+\textbf{Shareholders vs Stakeholders}
+
+\begin{itemize}
+    \item \textbf{Shareholders:}
+    Shareholders (or stockholders) are individuals or entities that legally own one or more shares of a corporation’s stock. Their primary interest is financial return on investment (ROI) through dividends and stock price appreciation.
+
+    \item \textbf{Stakeholders:}
+    Stakeholders are any groups or individuals who can affect or are affected by the organization’s objectives, policies, and actions. This includes shareholders, employees, customers, suppliers, government, communities, and even future generations.
+
+\end{itemize}
+
+\textbf{Key Differences:}
+
+\begin{tabular}{|p{4cm}|p{5cm}|p{7cm}|}
+\hline
+\textbf{Aspect} & \textbf{Shareholders} & \textbf{Stakeholders} \\
+\hline
+Primary Concern & Financial returns & Broader interests (social, environmental, financial) \\
+\hline
+Ownership & Own shares of the company & May or may not have ownership \\
+\hline
+Scope & Narrow: Focus on investment value & Broad: Includes many groups impacted by firm’s actions \\
+\hline
+Example & Investors in Apple Inc. & Employees, customers, suppliers, communities of Apple Inc. \\
+\hline
+\end{tabular}
+\vspace{0.5cm} 
+
+\textbf{Task Environment:}
+
+The task environment includes external forces that directly affect an organization's ability to achieve its goals and are influenced by the organization in return.
+
+\textbf{Key Elements:}
+\begin{itemize}
+    \item Customers
+    \item Competitors
+    \item Suppliers
+    \item Distributors
+    \item Strategic Allies
+    \item Regulatory Agencies
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{General Environment:}
+
+The general environment (also called the macro environment) includes broader societal forces that affect the task environment indirectly.
+
+\textbf{Key Elements:}
+\begin{itemize}
+    \item Economic Forces (inflation, unemployment, economic growth)
+    \item Technological Forces (innovation, automation)
+    \item Sociocultural Forces (values, lifestyles, demographics)
+    \item Political-Legal Forces (laws, regulations, government stability)
+    \item International Forces (globalization, cross-border trade policies)
+    \item Environmental Forces (climate change, sustainability movements)
+\end{itemize}
+
+\vspace{0.8cm}
+
+\textbf{Case Study: Starbucks Corporation}
+
+\textbf{Task Environment for Starbucks:}
+\begin{itemize}
+    \item \textbf{Customers:} Coffee drinkers seeking premium experiences.
+    \item \textbf{Competitors:} Dunkin', McDonald's McCafé, local artisanal cafes.
+    \item \textbf{Suppliers:} Coffee bean growers, dairy providers, logistics companies.
+    \item \textbf{Distributors:} Retail outlets, online delivery platforms.
+    \item \textbf{Regulators:} Food and Drug Administration (FDA), labor authorities.
+    \item \textbf{Strategic Allies:} Partnerships with Nestlé for distribution.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{General Environment for Starbucks:}
+\begin{itemize}
+    \item \textbf{Economic:} Global recession risks affecting luxury spending.
+    \item \textbf{Technological:} Mobile app development for ordering and payment.
+    \item \textbf{Sociocultural:} Increasing demand for ethically sourced coffee.
+    \item \textbf{Political-Legal:} Changing labor laws affecting wages.
+    \item \textbf{International:} Currency fluctuation impacting global revenue.
+    \item \textbf{Environmental:} Push for eco-friendly cups and recyclable materials.
+\end{itemize}
+
+\vspace{0.8cm}
+
+\textbf{Graphical Representation: Task and General Environment of Starbucks}
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.2cm, every node/.style={align=center}]
+\node (starbucks) [draw, circle, thick, minimum size=1cm] {Starbucks};
+
+% Task Environment Nodes
+\node (customers) [draw, rectangle, right=1cm of starbucks] {Customers};
+\node (competitors) [draw, rectangle, above=1.5cm of customers] {Competitors};
+\node (suppliers) [draw, rectangle, below=1.5cm of customers] {Suppliers};
+\node (distributors) [draw, rectangle, left=1cm of starbucks] {Distributors};
+\node (regulators) [draw, rectangle, above=1.5cm of distributors] {Regulators};
+\node (allies) [draw, rectangle, below=1.5cm of distributors] {Strategic Allies};
+
+% General Environment Layer (Outer circle)
+\draw[dashed] (0,0) circle (5cm);
+
+\node (economic) [below=4cm of starbucks] {Economic};
+\node (tech) [below right=3cm and 2cm of starbucks] {Technological};
+\node (social) [below left=3cm and 2cm of starbucks] {Sociocultural};
+\node (political) [above left=3cm and 2cm of starbucks] {Political-Legal};
+\node (international) [above right=3cm and 2cm of starbucks] {International};
+\node (environmental) [above=4cm of starbucks] {Environmental};
+
+% Arrows for Task Environment
+\draw[->, thick] (starbucks) -- (customers);
+\draw[->, thick] (starbucks) -- (suppliers);
+\draw[->, thick] (starbucks) -- (competitors);
+\draw[->, thick] (starbucks) -- (distributors);
+\draw[->, thick] (starbucks) -- (regulators);
+\draw[->, thick] (starbucks) -- (allies);
+
+\end{tikzpicture}
+\end{center}
+
+\textit{Note:} The task environment (rectangular nodes) directly interacts with Starbucks, while the general environment (outer dashed circle) creates broader, indirect influences.
+
+\vspace{1cm}
+
+\textbf{PESTEL:}
+
+The PESTEL framework is a strategic tool used to analyze external macro-environmental factors that could impact an organization's performance. It includes six dimensions:
+
+\begin{itemize}
+    \item \textbf{Political:} Government policies, political stability, taxation, trade restrictions.
+    \item \textbf{Economic:} Economic growth, interest rates, exchange rates, inflation rates.
+    \item \textbf{Sociocultural:} Cultural trends, demographics, social attitudes, lifestyle changes.
+    \item \textbf{Technological:} Technological innovations, R\&D activities, automation.
+    \item \textbf{Environmental:} Ecological concerns, environmental regulations, climate change.
+    \item \textbf{Legal:} Laws related to employment, consumer protection, health and safety.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Case Study: Impact of External Environment on Nokia}
+
+Nokia was once the global leader in mobile phone manufacturing. However, it failed to adapt swiftly to external environmental changes, particularly:
+
+\begin{itemize}
+    \item \textbf{Technological:} Rapid smartphone innovation led by Apple and Android ecosystems.
+    \item \textbf{Sociocultural:} Changing consumer preferences towards touchscreen devices.
+    \item \textbf{Economic:} Global economic recession (2008) reduced spending on luxury devices.
+    \item \textbf{Legal:} Intellectual property battles in the smartphone industry.
+\end{itemize}
+
+As a result, Nokia’s market share plummeted from over 50\% in 2007 to below 5\% by 2013\footnote{Source: Statista, Mobile Vendor Market Share 2007-2013}.
+
+\textbf{Insight:} This case underlines the critical importance of continuous external environment analysis through methods like PESTEL for sustaining competitive advantage.
+
+\vspace{1cm}
+\clearpage
+
+
+
 
 
 
