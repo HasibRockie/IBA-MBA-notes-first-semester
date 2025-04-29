@@ -1,0 +1,386 @@
+\documentclass[12pt,a4paper]{book}
+
+% Fonts & Typography — Elegant and Professional
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts} % Sleek, modern font
+\usepackage{microtype}
+
+% Essential Packages
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{parskip}
+
+% Page Geometry — Slim, Clean Margins
+\geometry{
+  a4paper,
+  left=10mm,
+  right=10mm,
+  top=20mm,
+  bottom=20mm
+}
+
+% Header & Footer Styling
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \textit{\nouppercase{\leftmark}}}
+\fancyhead[R]{\small K501: Quantative Analysis for Business Decisions}
+\fancyfoot[C]{\small \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+% Chapter Title Styling
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter.}{12pt}{}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}{1em}{}
+
+% Table of Contents Styling
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{}
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{2pt}
+\setlength{\cftaftertoctitleskip}{1em}
+
+% Hyperlink Styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={K501: Quantative Analysis for Business Decisions},
+    pdfpagemode=FullScreen,
+}
+
+% Custom Command for Notes 
+\newcommand{\notesection}[2]{
+  \section*{#1\\ \small \textit{#2}}
+  \phantomsection
+  \addcontentsline{toc}{section}{#1 - #2}
+} 
+
+% Document Start 
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{3.5cm}
+    \includegraphics[width=0.28\textwidth]{logo.png}\par\vspace{1.5cm}
+    {\scshape\LARGE University of Dhaka\par}
+    \vspace{0.5cm}
+    {\Large Institute of Business Administration (IBA)\par}
+    \vspace{1.5cm}
+    {\Huge\bfseries Master of Business Administration (MBA)\par}
+    \vspace{1cm}
+    {\Large K501: \textit{Quantative Analysis for Business Decision}\par}
+    \vfill
+    {\large Last Updated: \today\par}
+\end{titlepage}
+
+% Author Details Section 
+\section*{Author Details}
+\phantomsection
+\addcontentsline{toc}{section}{Author Details}
+
+\begin{center}
+    \vspace{1em}
+    \begin{tabular}{lll}
+        \textbf{Name} & : & Md Hasibul Islam \\
+        \textbf{Student ID} & : & 201-67-011 \\
+        \textbf{Program} & : & Master of Business Administration (MBA) \\
+        \textbf{Institute} & : & Institute of Business Administration (IBA) \\
+        \textbf{University} & : & University of Dhaka \\
+        \textbf{Email} & : & \href{mailto:hasiee8004@gmail.com}{hasiee8004@gmail.com} \\
+        \textbf{LinkedIn} & : & \href{https://www.linkedin.com/in/hasib009}{linkedin.com/in/hasib009} \\
+        \textbf{GitHub} & : & \href{https://github.com/HasibRockie}{github.com/HasibRockie} \\
+        \textbf{Website} & : & \href{https://hasibrockie.github.io}{hasibrockie.github.io} \\
+    \end{tabular}
+    \vspace{1em}
+\end{center}
+
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% Notes Sections
+\notesection{Statistics and Its Fundamental Concepts}{21-04-25 Monday}
+
+\textbf{Statistics} is the science of collecting, organizing, analyzing, interpreting, and presenting data to support decision-making and problem-solving in business and other domains. It provides a quantitative foundation for managerial decisions by offering meaningful insights from data.
+
+\vspace{0.5cm}
+\textbf{Types of Statistics:}
+\begin{enumerate}
+    \item \textbf{Descriptive Statistics:} This involves methods of organizing, summarizing, and displaying data. 
+    \begin{itemize}
+        \item Examples: Mean, Median, Mode, Standard Deviation, Frequency tables, Pie charts, Histograms.
+        \item Use Case: A retail manager summarizes last month's sales performance using a bar chart and average daily revenue.
+    \end{itemize}
+
+    \item \textbf{Inferential Statistics:} This refers to techniques for making generalizations from a sample to a population using probability theory.
+    \begin{itemize}
+        \item Examples: Hypothesis testing, Confidence intervals, Regression analysis.
+        \item Use Case: A pharmaceutical company tests a new drug on a sample group to infer its effectiveness on the broader population.
+    \end{itemize}
+\end{enumerate}
+
+\vspace{0.5cm}
+\textbf{Types of Variables:}
+\begin{itemize}
+    \item \textbf{Qualitative (Categorical) Variables:} Represent categories or labels.
+    \begin{itemize}
+        \item Examples: Gender, Brand name, Type of customer (new/returning).
+    \end{itemize}
+    \item \textbf{Quantitative Variables:} Represent numeric values.
+    \begin{itemize}
+        \item \textbf{Discrete Variables:} Countable values (e.g., Number of employees).
+        \item \textbf{Continuous Variables:} Measurable and can take any value within a range (e.g., Sales revenue, Temperature).
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{Levels of Measurement:}
+
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|p{3cm}|p{5cm}|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Characteristic} & \textbf{Nominal} & \textbf{Ordinal} & \textbf{Interval} & \textbf{Ratio} \\
+\hline
+\textbf{Definition} & 
+Categorical data without any order & 
+Categorical data with a logical order & 
+Numeric data with equal intervals, no true zero & 
+Numeric data with equal intervals and a true zero \\
+\hline
+
+\textbf{Nature of Data} & 
+Labels or names & 
+Ordered categories & 
+Quantitative & 
+Quantitative \\
+\hline
+
+\textbf{Mathematical Operations} & 
+Equality only & 
+Comparisons (>, <) & 
+Addition, subtraction & 
+All mathematical operations \\
+\hline
+
+\textbf{Meaningful Zero} & 
+No & 
+No & 
+No & 
+Yes \\
+\hline
+
+\textbf{Can Calculate Mean?} & 
+No & 
+No (median preferred) & 
+Yes & 
+Yes \\
+\hline
+
+\textbf{Examples} & 
+Gender, Blood Type, Product Type & 
+Socioeconomic Status, Education Level & 
+Temperature (Celsius/Fahrenheit), IQ Score & 
+Height, Weight, Age, Sales Revenue \\
+\hline
+
+\textbf{Applicable Statistics} & 
+Mode, Frequency & 
+Mode, Median, Percentile & 
+Mean, SD, Correlation & 
+All descriptive and inferential statistics \\
+\hline
+
+\textbf{Distance between values is meaningful?} & 
+No & 
+Not always & 
+Yes & 
+Yes \\
+\hline
+
+\textbf{Has absolute zero?} & 
+No & 
+No & 
+No & 
+Yes \\
+\hline
+\end{tabular}%
+}
+\caption{Comparison of Levels of Measurement}
+\end{table}
+
+
+\vspace{0.5cm}
+\textbf{Other Key Concepts:}
+\begin{itemize}
+    \item \textbf{Population:} The entire group of individuals or instances about whom we hope to learn.
+    \item \textbf{Sample:} A subset of the population, selected for analysis.
+    \item \textbf{Parameter:} A numerical summary or measure that describes a characteristic of a population (e.g., population mean $\mu$).
+    \item \textbf{Statistic:} A numerical summary derived from a sample (e.g., sample mean $\bar{x}$). Statistics are used to estimate parameters.
+\end{itemize}
+
+\vspace{2cm}
+
+% new day 
+\notesection{Classification of Variables with Examples}{28-04-25 Monday}
+
+\textbf{Table 2: Classification of Variables — Qualitative vs Quantitative, Discrete vs Continuous}
+
+\vspace{0.5cm}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{3cm}|p{7.5cm}|p{5.5cm}|}
+\hline
+\textbf{Variable Type} & \textbf{Discrete Examples} & \textbf{Continuous Examples} \\
+\hline
+\textbf{Qualitative } &
+Shirt size (S, M, L) \newline
+Product category (A, B, C) \newline
+Number of children category (None, One, Two+) \newline
+Room type (Single, Double) \newline
+Education level (High School, UG, PG)
+&
+Skin tone spectrum \newline
+Customer feedback scale \newline
+Dialect variation \newline
+Shade of color preferences \newline
+Accent variation \\
+\hline
+\textbf{Quantitative} &
+Number of cars owned \newline
+Number of transactions \newline
+Exam scores (out of 100) \newline
+Number of employees \newline
+Number of visits
+&
+Height (cm) \newline
+Weight (kg) \newline
+Income (\$) \newline
+Temperature (°C) \newline
+Time spent (hours) \\
+\hline
+\end{tabular}
+\caption{Classification of Variables: Qualitative vs Quantitative and Discrete vs Continuous}
+\end{table}
+    
+\vspace{1cm}
+
+\textbf{Table 3: Classification by Levels of Measurement — Nominal, Ordinal, Interval, Ratio with Discrete and Continuous Types}
+
+\vspace{0.3cm}
+
+\begin{table}[h!]
+\centering
+
+\begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|}
+\hline
+\textbf{Level of Measurement} & \textbf{Discrete Examples} & \textbf{Continuous Examples} \\
+\hline
+\textbf{Nominal} &
+\begin{itemize}
+    \item Jersey number
+    \item Postal code
+    \item Nationality
+    \item Product ID
+    \item Car model
+\end{itemize}
+&
+\begin{itemize}
+    \item Color shade
+    \item Accent pattern
+    \item Logo design variation
+    \item Pattern of speech
+    \item Ink density
+\end{itemize}
+\\
+\hline
+\textbf{Ordinal} &
+\begin{itemize}
+    \item Customer rating (1–5 stars)
+    \item Survey rank (Strongly disagree to Agree)
+    \item Academic grade (A, B, C)
+    \item Job level (Junior, Mid, Senior)
+    \item Market tier (Low, Mid, High)
+\end{itemize}
+&
+\begin{itemize}
+    \item Satisfaction level on 0–10 scale
+    \item Credit score bands
+    \item Health condition severity
+    \item Employee performance level
+    \item Risk tolerance scale
+\end{itemize}
+\\
+\hline
+\textbf{Interval} &
+\begin{itemize}
+    \item Test scores (e.g., IQ, SAT)
+    \item Temperature recorded hourly
+    \item Credit scores in discrete brackets
+    \item Year of birth
+    \item Calendar dates
+\end{itemize}
+&
+\begin{itemize}
+    \item Temperature (°C or °F)
+    \item Time of day (without AM/PM)
+    \item Financial index points
+    \item Sound intensity
+    \item Wind speed variation
+\end{itemize}
+\\
+\hline
+\textbf{Ratio} &
+\begin{itemize}
+    \item Number of products sold
+    \item Number of goals scored
+    \item Number of books owned
+    \item Defect counts in production
+    \item Visitors per day
+\end{itemize}
+&
+\begin{itemize}
+    \item Income
+    \item Distance traveled
+    \item Weight
+    \item Time
+    \item Age
+\end{itemize}
+\\
+\hline
+\end{tabular}
+
+\caption{50 Examples Categorized by Level of Measurement and Variable Type}
+\end{table}
+
+\vspace{1cm}
+\clearpage
+
+
+
+
+% new note 
+\notesection{2025-04-23}{Wednesday}
+\textbf{Topics Covered:}
+
+\clearpage
+
+% end of the note 
+
+
+\end{document}
